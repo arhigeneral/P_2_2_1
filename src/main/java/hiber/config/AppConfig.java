@@ -32,7 +32,7 @@ public class AppConfig {
       dataSource.setDriverClassName(env.getProperty("db.driver"));
       dataSource.setUrl(env.getProperty("db.url"));
       dataSource.setUsername(env.getProperty("db.username"));
-      dataSource.setPassword("якрутой");
+      dataSource.setPassword(env.getProperty("db.password"));
       return dataSource;
    }
 
